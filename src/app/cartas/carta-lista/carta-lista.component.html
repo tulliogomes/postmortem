@@ -1,0 +1,12 @@
+<table class="table table-hover">
+  <thead>
+  <th>Carta</th>
+  <th></th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let crt of list">
+    <td (click)="onEdit(crt)">{{crt.textoCarta}}</td>
+    <td><a class="btn text-danger" (click)="onDelete(crt.id)"><i class="fa fa-trash"></i></a></td>
+  </tr>
+  </tbody>
+</table>
